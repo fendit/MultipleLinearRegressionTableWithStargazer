@@ -1,4 +1,5 @@
-### Introduction
+# R - Multiple Regressions Table with Stargazer
+#### Introduction
 
 This R script exhibits how to generate a Latex regression table with [stargazer](https://cran.r-project.org/web/packages/stargazer/stargazer.pdf) (R package) with multiple regressions. The aim is to simplify regressions generation processes by user-defined set of IVs for each equation and show all results in a regression table with stargazer. This is very helpful when adding new IVs in current equation gradually.
 
