@@ -17,10 +17,10 @@ Regress <- function(data, DV, eq.IVs, OutcomeLabel){
   }
   
   # Export RegResults as doc 
-  stargazer(RegResults, 
-            type = 'html', 
-            out = paste0("Regression_Results_", OutcomeLabel, ".doc"), add.lines = list(LogLike))
-  return(print('Regression Table generated :)'))
+  return(stargazer(RegResults, 
+                   type = 'html', 
+                   out = paste0("Regression_Results_", OutcomeLabel, ".doc"), add.lines = list(LogLike))
+         )
 }
 
 
@@ -37,4 +37,4 @@ eq.IVs <- c("block",
             'block + N'
             )
 
-Regress(data = npk, DV = DV, eq.IVs = eq.IVs, OutcomeLabel = "NPK")
+RegressionTable <- Regress(data = npk, DV = DV, eq.IVs = eq.IVs, OutcomeLabel = "NPK")
