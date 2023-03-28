@@ -1,4 +1,7 @@
 # R - Multiple Linear Regressions Table with Stargazer
+
+See the Github page [here](https://fendit.github.io/MultipleLinearRegressionTableWithStargazer/)
+
 #### Introduction
 
 In this repository, I present a method to generate multiple linear regressions with a Latex regression table with [stargazer](https://cran.r-project.org/web/packages/stargazer/stargazer.pdf) (R package). The aim is to simplify regressions generation processes with user-defined set of Independent Variables (IVs) for each regression model and show all results in a regression table with stargazer. This is very helpful when adding new IVs in current equation gradually.
