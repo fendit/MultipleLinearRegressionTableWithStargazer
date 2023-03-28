@@ -41,10 +41,10 @@ Regress <- function(data, DV, eq.IVs, OutcomeLabel){
   }
   
   # Export RegResults as doc 
-  
   return(stargazer(RegResults, 
             type = 'html', 
-            out = paste0("Regression_Results_", OutcomeLabel, ".doc"), add.lines = list(LogLike)))
+            out = paste0("Regression_Results_", OutcomeLabel, ".doc"), add.lines = list(LogLike))
+         )
 }
 ```
 
